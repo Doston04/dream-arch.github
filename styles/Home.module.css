@@ -1,0 +1,386 @@
+#body {
+  background-color: var(--background-color);
+}
+
+@font-face {
+  font-family: "Mak-700";
+  src: url("../fonts/MAK-BOLD.OTF");
+}
+
+.backTitle {
+  position: absolute;
+  left: 0;
+  top: 160px;
+  font-size: 150px;
+  line-height: 180px;
+  color: var(--bg-text-color);
+  font-family: "Mak-700";
+  text-transform: uppercase;
+  z-index: -1;
+}
+
+.landing {
+  height: 100vh;
+  background-color: #171717;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../public/media/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landingContent {
+  position: relative;
+}
+
+.landingMainText {
+  font-family: "Mak-700";
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.landingSecondaryText {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter-300";
+  max-width: 600px;
+  width: 100%;
+  margin: 15px 0 45px 0;
+}
+
+.fullScroll {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sectionTitle {
+  color: #fff;
+  font-size: 51px;
+  line-height: 61px;
+  text-transform: uppercase;
+  font-family: "Inter-500";
+  position: relative;
+  z-index: 3;
+}
+
+.mainSection {
+  position: relative;
+  z-index: 2;
+}
+
+.mainSectionInner {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+  z-index: 1;
+}
+
+.servicesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.service {
+  position: relative;
+  padding: 60px 30px 30px 30px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-image: url("../public/media/serviceBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.secondaryBtnHome {
+  background-color: var(--main-black);
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
+  text-transform: uppercase;
+  padding: 15px 30px;
+  font-weight: 500;
+  transition: 0.4s;
+  font-family: "Inter-500";
+  cursor: pointer;
+}
+
+.service:hover .secondaryBtnHome {
+  background-color: var(--yellow);
+  color: var(--main-black);
+  transition: 0.4s;
+}
+
+.service::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--yellow);
+  z-index: 3;
+}
+
+.serviceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #fff;
+}
+
+.serviceName {
+  font-size: 32px;
+  line-height: 38px;
+  font-family: "Inter-700";
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.serviceDescription {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter";
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.qubbaContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 60px;
+  gap: 30px;
+}
+
+.qubba {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  border: 2px solid var(--gray-line);
+  width: 100%;
+  height: 320px;
+  color: #fff;
+}
+
+.qubbaNumber {
+  font-size: 72px;
+  line-height: 86px;
+  font-family: "Mak-700";
+}
+
+.qubbaText {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 200px;
+  width: 100%;
+  font-family: "Inter";
+}
+
+.articlesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.articleContentTop {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+}
+
+.articleImage {
+  position: relative;
+  width: 100%;
+  height: 320px;
+}
+
+.articleContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 30px;
+  background-color: var(--main-black);
+}
+
+.articleText {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Inter-700";
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.articleAllButton {
+  margin-top: 30px;
+}
+
+.viewDiv {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.clock {
+  width: 18px;
+  height: 18px;
+}
+
+.viewTime {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Inter";
+  text-transform: lowercase;
+}
+
+.aboutGridDiv {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 520px;
+  border: 2px solid #282828;
+  background-color: var(--main-black);
+}
+
+.aboutGrid {
+  width: 100%;
+}
+
+.aboutSectionImage {
+  position: relative;
+  height: 100%;
+}
+
+.aboutSectionContent {
+  padding: 40px 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.aboutTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.aboutTitle {
+  font-family: "Inter-700";
+  font-size: 32px;
+  line-height: 38px; 
+}
+
+.aboutText {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Inter";
+}
+
+.asideTextDiv {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  font-family: "Inter-500";
+  text-transform: uppercase;
+  background-color: var(--yellow);
+  padding: 10px 0;
+  color: #171717;
+  overflow: hidden;
+  max-width: 50px;
+  width: 100%;
+}
+
+.asideText {
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .landingMainText {
+    font-size: 32px;
+    line-height: 38px; 
+  }
+  .landingSecondaryText {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .fullScroll {
+    margin-top: 60px;
+  }
+  .sectionTitle {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .backTitle {
+    font-size: 50px;
+    line-height: 60px;
+    top: 20px;
+  }
+  .servicesContainer {
+    grid-template-columns: 1fr;
+  }
+  .service {
+    height: 500px;
+  }
+  .mainSectionInner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .qubbaContainer {
+    grid-template-columns: 1fr;
+  }
+  .qubba {
+    height: 330px;
+  }
+  .articlesContainer {
+    grid-template-columns: 1fr;
+  }
+  .articleImage {
+    height: 285px;
+  }
+  .aboutGridDiv {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .aboutTextContainer {
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .aboutSectionImage {
+    height: 335px;
+  }
+}
+
